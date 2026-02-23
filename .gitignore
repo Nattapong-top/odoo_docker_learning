@@ -205,3 +205,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Python bytecode (ไฟล์ขยะจากการรัน Python)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Odoo Data & Logs (ข้อมูลและ Log ของระบบ)
+*.log
+/filestore/
+/sessions/
+
+# Docker & Database (โฟลเดอร์เก็บฐานข้อมูลที่เราทำ Volume ไว้)
+# หากป๋าตั้งชื่อโฟลเดอร์เก็บ DB เป็นอย่างอื่น ให้เปลี่ยนชื่อตรงนี้ด้วยครับ
+postgres_data/
+odoo_db_data/
+odoo_web_data/
+
+# OS generated files (ไฟล์ขยะจาก Windows/Mac)
+.DS_Store
+Thumbs.db
+
+# Environment variables (ไฟล์เก็บรหัสผ่าน)
+.env
